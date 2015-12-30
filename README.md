@@ -1,2 +1,1 @@
-# vanillabugs
-Vanilla Bugs - Open source project management
+Easy project management for fast moving teams.
