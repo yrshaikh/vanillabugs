@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4f6de368e19f40518870f33df6527fdd" Name="Projects">
+        <EntityTypeShape EntityType="ProjectManagementModel.Project" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectManagementModel.UserProjectMapping" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="ProjectManagementModel.FK_UserProjectMappings_Projects" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ProjectManagementModel.AspNetUser" Width="1.5" PointX="0.75" PointY="4" />
+        <AssociationConnector Association="ProjectManagementModel.FK_UserProjectMappings_AspNetUsers" />
+      </Diagram>
+      <Diagram DiagramId="139d28de7ff74026a7c2e39ddd2829cb" Name="Issues" >
+        <EntityTypeShape EntityType="ProjectManagementModel.IssuePriorityMaster" Width="1.5" PointX="5.375" PointY="1" />
+        <EntityTypeShape EntityType="ProjectManagementModel.IssueStatusMaster" Width="1.5" PointX="5.375" PointY="2.875" />
+        <EntityTypeShape EntityType="ProjectManagementModel.IssueTypeMaster" Width="1.5" PointX="0.75" PointY="2" />
+        <EntityTypeShape EntityType="ProjectManagementModel.Issue" Width="1.5" PointX="3" PointY="0.875" />
+        <AssociationConnector Association="ProjectManagementModel.FK_Issues_IssuePriorityMaster" />
+        <AssociationConnector Association="ProjectManagementModel.FK_Issues_IssueStatusMaster" />
+        <AssociationConnector Association="ProjectManagementModel.FK_Issues_IssueTypeMaster" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

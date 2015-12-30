@@ -1,0 +1,29 @@
+/* 1. FONTS ***********************************************/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
+
+body, button, input, h1, h2, h3, h4, h5, h6 {font-family: 'Roboto', 'Segoe UI', Tahoma, Arial, sans-serif !important;}
+
+/*body {
+	background-image: url('/stylesheets/images/background.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+body {background: #E8EEF2;}
+label{ font-weight: 400;}
+.panel {width:370px}
+.btn {text-transform: uppercase;}
+.single-pg {margin-top: 105px;}
+.single-pg .logo {margin: 0 auto;height: 40px;display: block;}
+.single-pg .msg {color:#fff;margin-top: 60px;}
+.single-pg .panel-heading {background: #353638;}
+.form-signin {max-width: 330px;padding: 15px;margin: 0 auto;}
+.form-signin .username {margin-top: -10px;}
+.form-signin .password {margin-top: 15px;}
+.form-signin .error, .form-register .error {margin-top: 10px;}
+.form-register .buttons, .form-signin .buttons {margin-top: 15px;}
+.form-register .other-links, .form-signin .other-links {margin-top:7px;}
+.form-register .input {margin-top: 10px;}
+.single-pg {width: 367px;height: 450px;position: absolute;top:0;bottom: 0;left: 0;right: 0;margin: auto;}
+.btn-success {background: #7BB23D;border: 1px solid #7DA94C;border-radius:2px}

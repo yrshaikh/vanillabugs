@@ -1,0 +1,1969 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Yasser\projects\github\OneNinja\build\release</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="bin/AutoMapper.dll">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="bin/Elmah.dll">
+      <publishTime>08/11/2015 11:49:53</publishTime>
+    </File>
+    <File Include="bin/Elmah.Mvc.dll">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>08/11/2015 11:49:43</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>08/11/2015 11:49:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>08/11/2015 11:49:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>08/11/2015 11:49:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>08/11/2015 11:49:43</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>08/11/2015 11:49:47</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>08/11/2015 11:49:47</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>08/11/2015 11:49:49</publishTime>
+    </File>
+    <File Include="bin/Ninject.dll">
+      <publishTime>08/11/2015 11:49:51</publishTime>
+    </File>
+    <File Include="bin/Ninject.Web.Common.dll">
+      <publishTime>08/11/2015 11:49:52</publishTime>
+    </File>
+    <File Include="bin/Ninject.Web.Mvc.dll">
+      <publishTime>08/11/2015 11:49:52</publishTime>
+    </File>
+    <File Include="bin/OneNinja.Data.dll">
+      <publishTime>08/12/2015 08:40:46</publishTime>
+    </File>
+    <File Include="bin/OneNinja.Service.dll">
+      <publishTime>08/12/2015 08:40:47</publishTime>
+    </File>
+    <File Include="bin/OneNinja.Web.dll">
+      <publishTime>08/12/2015 12:54:43</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>08/11/2015 11:49:52</publishTime>
+    </File>
+    <File Include="bin/root.dll">
+      <publishTime>08/12/2015 08:40:47</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>08/11/2015 11:49:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>08/11/2015 11:49:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>08/11/2015 11:49:45</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>08/11/2015 11:49:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>08/11/2015 11:49:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>08/11/2015 11:49:44</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>08/11/2015 11:49:46</publishTime>
+    </File>
+    <File Include="bin/WebActivatorEx.dll">
+      <publishTime>08/11/2015 11:49:52</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>08/11/2015 11:49:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/css/font-awesome.css">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/css/font-awesome.min.css">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/fonts/fontawesome-webfont.eot">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/fonts/fontawesome-webfont.svg">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/fonts/fontawesome-webfont.ttf">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/fonts/fontawesome-webfont.woff">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/fonts/fontawesome-webfont.woff2">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/fonts/FontAwesome.otf">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/HELP-US-OUT.txt">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/animated.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/bordered-pulled.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/core.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/fixed-width.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/font-awesome.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/icons.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/larger.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/list.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/mixins.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/path.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/rotated-flipped.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/stacked.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/less/variables.less">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/font-awesome.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_animated.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_bordered-pulled.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_core.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_fixed-width.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_icons.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_larger.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_list.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_mixins.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_path.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_rotated-flipped.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_stacked.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/font-awesome-4.3.0/scss/_variables.scss">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/Images/empty-inbox.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/001 Home.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/002 User.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/003 User2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/004 Calendar.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/005 CalendarDate.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/006 Folder.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/007 FolderAdd.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/008 Mail.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/009 MailOpen.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/010 Inbox.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/011 InboxDownload.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/012 Inboxes.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/013 MagnifyingGlass.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/014 ZoomIn.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/015 ZoomOut.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/016 Notepad.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/017 Bag.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/018 Case.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/019 Lock.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/020 Document.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/021 Document Text.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/022 Document Add.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/023 Document Delete.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/024 Computer.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/025 Notebook.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/026 Tablet.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/027 Smartphone.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/028 MP3Player.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/029 MP3Player2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/030 Camera.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/031 Printer.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/032 Printer2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/033 PrinterText.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/034 Microphone.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/035 Microphone2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/036 Battery.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/037 ArrowUp.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/038 ArrowDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/039 ArrowLeft.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/040 ArrowRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/041 ArrowsApart.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/042 ArrowsTogether.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/043 AirPlay.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/044 Repeat.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/045 Shuffle.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/046 Genius.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/047 Genius2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/048 Videocamera.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/049 Disk.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/050 Disk2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/051 SDCard.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/052 Ruler.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/053 Preferences.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/054 Preferences2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/055 CircledArrowUp.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/056 CircledArrowDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/057 CircledArrowLeft.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/058 CircledArrowRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/059 CircledOff.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/060 Off.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/061 Sync.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/062 Redo.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/063 Undo.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/064 Backward.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/065 Forward.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/066 Play.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/067 Pause.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/068 Cancel.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/069 Plus.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/070 Minus.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/071 Obelus.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/072 Tag.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/073 RSS.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/074 ArchieveBox.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/075 Globe.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/076 LocationArrow.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/077 Location.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/078 Pin.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/079 Pin2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/080 Trash.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/081 Pen.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/082 Earphones.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/083 Music.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/084 Photo.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/085 Movie.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/086 Airplane.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/087 Speechbubbles.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/088 Speechbubble.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/089 Speechbubble2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/090 Notes.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/091 Left-Adjusted.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/092 Centered.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/093 Right-Adjusted.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/094 Justification.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/095 Chart.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/096 Textform.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/097 Forms.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/098 Spreadsheet.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/099 Mark.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/100 Mark2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/101 Forward.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/102 Backward.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/103 Bold.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/104 Italic.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/105 Underline.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/106 Fonts.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/107 Flag.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/108 Bookmark.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/109 RoundedArrowDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/110 RoundedArrowUp.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/111 RoundedArrowLeft.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/112 RoundedArrowRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/113 Grid.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/114 Grid2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/115 List.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/116 List2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/117 CoverFlow.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/118 Columns.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/119 Eye.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/120 Eject.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/121 Cloud.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/122 CloudUpload.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/123 CloudDownload.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/124 CloudAdd.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/125 CloudDelete.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/126 CloudError.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/127 ArrowLeft.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/128 ArrowLeftDouble.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/129 ArrowRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/130 ArrowRightDouble.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/131 Calculator.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/132 CD.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/133 TriangleUp.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/134 TriangleDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/135 TriangleLeft.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/136 TriangleRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/137 CircledBorderTriangleUp.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/138 CircledBorderTriangleDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/139 CircledBorderTriangleLeft.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/140 CircledBorderTriangleRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/141 Keyboard.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/142 Mouse.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/143 Attention.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/144 Forbidden.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/145 Action.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/146 RoundedActionLeft.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/147 RoundedActionRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/148 RoundedActionLeft2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/149 RoundedActionRight2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/150 Glasses.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/151 Glasses.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/152 VolumeDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/153 VolumeUp.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/154 ShoppingCart.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/155 ShoppingCart2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/156 Library.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/157 Burn.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/158 Keyhole.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/159 Key.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/160 Desktop.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/161 Desktop2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/162 Guidepost.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/163 Grid3.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/164 QuestionMark.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/165 ExclamationMark.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/166 CircledEject.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/167 Box.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/168 BoxFilled.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/169 Pricetag.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/170 CurvedArrowRightDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/171 CurvedArrowLeftDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/172 CurvedArrowRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/173 CurvedArrowLeftUp.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/174 Nuclear.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/175 Information.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/176 BookmarkUsed.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/177 BookmarkUnused.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/178 Download.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/179 Upload.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/180 Ticket.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/181 FormOval.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/182 FormOvalBorder.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/183 FormRectangle.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/184 FormRectangleBorder.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/185 FormRounded.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/186 FormRoundedBorder.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/187 FormPolygon.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/188 FormPolygonBorder.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/189 FormStar.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/190 FormStarBorder.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/191 FormTriangle.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/192 FormTriangleBorder.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/193 ChequeredPattern.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/194 LightBulb.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/195 Raindrop.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/196 Time.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/197 Compass.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/198 Paperclip.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/199 CircledPlus.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/200 CircledMinus.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/201 CircledBackward.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/202 CircledForward.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/203 CircledBack.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/204 CircledNext.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/205 CircledPause.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/206 CircledStop.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/207 CircledBackward2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/208 CircledForward2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/209 CircledBorderArrowLeft.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/210 CircledBorderArrowRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/211 CircledBorderArrowUp.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/212 CircledBorderArrowDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/213 CircledBorderTriangleLeft.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/214 CircledBorderTriangleRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/215 CircledBorderTriangleUp.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/216 CircledBorderTriangleDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/217 CircledRedo.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/218 CircledUndo.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/219 CircledSync.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/220 ArrowTurnRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/221 ArrowTurnLeft.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/222 ArrowTurnRightDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/223 ArrowTurnLeftDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/224 ArrowUpDown.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/225 ArrowLeftRight.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/226 CircledGeo.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/227 CircledList.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/228 ArrowTurnMore.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/229 DoubleCircle.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/230 HalfCircle.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/231 PagesView.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/232 PagesView2.png">
+      <publishTime>08/11/2015 11:49:31</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/233 PagesView3.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/black/234 PagesView4.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/001 Home.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/002 User.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/003 User2.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/004 Calendar.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/005 CalendarDate.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/006 Folder.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/007 FolderAdd.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/008 Mail.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/009 MailOpen.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/010 Inbox.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/011 InboxDownload.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/012 Inboxes.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/013 MagnifyingGlass.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/014 ZoomIn.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/015 ZoomOut.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/016 Notepad.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/017 Bag.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/018 Case.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/019 Lock.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/020 Document.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/021 Document Text.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/022 Document Add.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/023 Document Delete.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/024 Computer.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/025 Notebook.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/026 Tablet.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/027 Smartphone.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/028 MP3Player.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/029 MP3Player2.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/030 Camera.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/031 Printer.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/032 Printer2.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/033 PrinterText.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/034 Microphone.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/035 Microphone2.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/036 Battery.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/037 ArrowUp.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/038 ArrowDown.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/039 ArrowLeft.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/040 ArrowRight.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/041 ArrowsApart.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/042 ArrowsTogether.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/043 AirPlay.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/044 Repeat.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/045 Shuffle.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/046 Genius.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/047 Genius2.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/048 Videocamera.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/049 Disk.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/050 Disk2.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/051 SDCard.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/052 Ruler.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/053 Preferences.png">
+      <publishTime>08/11/2015 11:49:32</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/054 Preferences2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/055 CircledArrowUp.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/056 CircledArrowDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/057 CircledArrowLeft.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/058 CircledArrowRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/059 CircledOff.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/060 Off.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/061 Sync.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/062 Redo.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/063 Undo.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/064 Backward.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/065 Forward.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/066 Play.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/067 Pause.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/068 Cancel.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/069 Plus.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/070 Minus.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/071 Obelus.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/072 Tag.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/073 RSS.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/074 ArchieveBox.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/075 Globe.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/076 LocationArrow.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/077 Location.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/078 Pin.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/079 Pin2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/080 Trash.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/081 Pen.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/082 Earphones.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/083 Music.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/084 Photo.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/085 Movie.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/086 Airplane.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/087 Speechbubbles.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/088 Speechbubble.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/089 Speechbubble2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/090 Notes.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/091 Left-Adjusted.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/092 Centered.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/093 Right-Adjusted.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/094 Justification.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/095 Chart.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/096 Textform.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/097 Forms.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/098 Spreadsheet.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/099 Mark.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/100 Mark2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/101 Forward.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/102 Backward.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/103 Bold.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/104 Italic.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/105 Underline.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/106 Fonts.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/107 Flag.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/108 Bookmark.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/109 RoundedArrowDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/110 RoundedArrowUp.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/111 RoundedArrowLeft.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/112 RoundedArrowRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/113 Grid.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/114 Grid2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/115 List.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/116 List2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/117 CoverFlow.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/118 Columns.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/119 Eye.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/120 Eject.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/121 Cloud.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/122 CloudUpload.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/123 CloudDownload.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/124 CloudAdd.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/125 CloudDelete.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/126 CloudError.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/127 ArrowLeft.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/128 ArrowLeftDouble.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/129 ArrowRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/130 ArrowRightDouble.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/131 Calculator.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/132 CD.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/133 TriangleUp.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/134 TriangleDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/135 TriangleLeft.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/136 TriangleRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/137 CircledBorderTriangleUp.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/138 CircledBorderTriangleDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/139 CircledBorderTriangleLeft.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/140 CircledBorderTriangleRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/141 Keyboard.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/142 Mouse.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/143 Attention.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/144 Forbidden.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/145 Action.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/146 RoundedActionLeft.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/147 RoundedActionRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/148 RoundedActionLeft2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/149 RoundedActionRight2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/150 Glasses.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/151 Glasses.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/152 VolumeDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/153 VolumeUp.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/154 ShoppingCart.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/155 ShoppingCart2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/156 Library.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/157 Burn.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/158 Keyhole.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/159 Key.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/160 Desktop.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/161 Desktop2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/162 Guidepost.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/163 Grid3.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/164 QuestionMark.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/165 ExclamationMark.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/166 CircledEject.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/167 Box.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/168 BoxFilled.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/169 Pricetag.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/170 CurvedArrowRightDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/171 CurvedArrowLeftDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/172 CurvedArrowRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/173 CurvedArrowLeftUp.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/174 Nuclear.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/175 Information.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/176 BookmarkUsed.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/177 BookmarkUnused.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/178 Download.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/179 Upload.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/180 Ticket.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/181 FormOval.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/182 FormOvalBorder.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/183 FormRectangle.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/184 FormRectangleBorder.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/185 FormRounded.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/186 FormRoundedBorder.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/187 FormPolygon.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/188 FormPolygonBorder.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/189 FormStar.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/190 FormStarBorder.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/191 FormTriangle.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/192 FormTriangleBorder.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/193 ChequeredPattern.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/194 LightBulb.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/195 Raindrop.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/196 Time.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/197 Compass.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/198 Paperclip.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/199 CircledPlus.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/200 CircledMinus.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/201 CircledBackward.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/202 CircledForward.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/203 CircledBack.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/204 CircledNext.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/205 CircledPause.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/206 CircledStop.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/207 CircledBackward2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/208 CircledForward2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/209 CircledBorderArrowLeft.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/210 CircledBorderArrowRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/211 CircledBorderArrowUp.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/212 CircledBorderArrowDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/213 CircledBorderTriangleLeft.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/214 CircledBorderTriangleRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/215 CircledBorderTriangleUp.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/216 CircledBorderTriangleDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/217 CircledRedo.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/218 CircledUndo.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/219 CircledSync.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/220 ArrowTurnRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/221 ArrowTurnLeft.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/222 ArrowTurnRightDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/223 ArrowTurnLeftDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/224 ArrowUpDown.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/225 ArrowLeftRight.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/226 CircledGeo.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/227 CircledList.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/228 ArrowTurnMore.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/229 DoubleCircle.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/230 HalfCircle.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/231 PagesView.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/232 PagesView2.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/233 PagesView3.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/icons/grey/234 PagesView4.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/ninja.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Images/unknown-user.png">
+      <publishTime>08/11/2015 11:49:33</publishTime>
+    </File>
+    <File Include="Content/Login.css">
+      <publishTime>08/12/2015 10:59:59</publishTime>
+    </File>
+    <File Include="Content/markdown/angular-pagedown.css">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/select2/select.css">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/select2/select2-spinner.gif">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/select2/select2.css">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/select2/select2.png">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/select2/select2x2.png">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>08/12/2015 10:58:42</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/angular/angular-animate.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/angular-chart/angular-chart.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/angular-chart/Dependencies/Chart.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/angular-multi-select.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/angular-resource.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/angular-route.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/angular-signalr-hub.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/angular-ui-router.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/angular-ui.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/angular.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/bootstrap/ui-bootstrap-tpls-0.11.0.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/datepicker/datePicker.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/datepicker/datePickerUtils.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/datepicker/dateRange.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/datepicker/input.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/markdown/angular-pagedown.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/markdown/Markdown.Converter.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/markdown/Markdown.Editor.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/markdown/Markdown.Sanitizer.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/momentjs/angular-moment.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/momentjs/moment.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/ng-flow-standalone.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/ng-table/ng-table.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Scripts/angular/ngTagInput/ng-tags-input.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/app.js">
+      <publishTime>08/12/2015 12:53:46</publishTime>
+    </File>
+    <File Include="Scripts/app/controllers/analytics-controller.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/controllers/create-project-controller.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/controllers/issue-controller.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/controllers/project-controller.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/controllers/settings-controller.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/controllers/wiki-controller.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/directives/autofocus-directive.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/directives/comments-directive.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/filters/initials-filter.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/filters/props-filter.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/services/project-service.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/services/user-service.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/app/views/comments.html">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery/daterangepicker/daterangepicker.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery/jquery-1.11.1.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery/jquery-ui.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery/jquery.signalR-2.2.0.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/jquery/jquery.signalR-2.2.0.min.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/select2/select.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/underscore/underscore.js">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>08/11/2015 11:49:35</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>08/12/2015 12:09:42</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>08/12/2015 12:09:42</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>08/12/2015 12:46:47</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Shared/Lockout.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Shared/_Footer.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Shared/_Header.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/12/2015 12:48:42</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Shared/_ProjectSubNav.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/SharedOld/Error.cshtml">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Views/SharedOld/Lockout.cshtml">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Views/SharedOld/_Footer.cshtml">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Views/SharedOld/_Layout.cshtml">
+      <publishTime>08/12/2015 11:27:08</publishTime>
+    </File>
+    <File Include="Views/SharedOld/_LoginPartial.cshtml">
+      <publishTime>08/11/2015 12:34:38</publishTime>
+    </File>
+    <File Include="Views/SharedOld/_ProjectSubNav.cshtml">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Views/Template/Analytics.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Template/CreateProject.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Template/Issues.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Template/MyTasks.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Template/Notifications.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Template/Profile.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Template/Projects.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Template/Settings.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Template/Timeline.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Template/Wiki.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/Template/_ProjectMenu.cshtml">
+      <publishTime>08/12/2015 12:10:54</publishTime>
+    </File>
+    <File Include="Views/TemplateOld/CreateProject.cshtml">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Views/TemplateOld/MyTasks.cshtml">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Views/TemplateOld/Notifications.cshtml">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Views/TemplateOld/Projects.cshtml">
+      <publishTime>08/11/2015 11:49:36</publishTime>
+    </File>
+    <File Include="Views/TemplateOld/_ProjectMenu.cshtml">
+      <publishTime>08/12/2015 08:29:06</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>08/12/2015 12:09:42</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>08/12/2015 12:09:42</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/12/2015 12:18:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

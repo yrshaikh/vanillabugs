@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+<div id="second-nav" ng-controller="ProjectController" ng-init="init()" ng-show2="subNavEnabled" class="header clearfix">
+    <h4 class="pull-left crumb bread">
+        <a href="#dashboard">My Projects</a>
+    </h4>
+</div>
+<div ng-init="init()">
+    <div id="projects" class="mb10 clearfix">
+        <div>
+            <a ng-click="newProject()" class="p new">
+                <span ng-show="projects.loading" class="title loading">
+                    <i class="fa fa-spin fa-spinner"></i>&nbsp;
+                    fetching projects...
+                </span>
+                <span ng-hide="projects.loading" class="title" title="Create new project">
+                    <img src="/Content/Images/plus.png" />
+                    <span class="h">create new project</span>
+                </span>
+            </a>
+            <a href="#/project/{{project.Id}}/issues" class="p" ng-repeat="project in projects.data">
+                <span class="title">{{project.Name}}</span>
+                <span class="status">
+                    <i class="fa fa-dot-circle-o red"></i><span>7 open</span>
+                    <i class="fa fa-dot-circle-o green"></i><span>145 closed</span>
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+@Html.Partial("_CreateProject")

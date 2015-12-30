@@ -1,0 +1,59 @@
+﻿@using Web.Core.Utils.Helpers
+@using Web.Models
+@model LoginViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "Log in";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - @BrandManager.GetBrandName()</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/logincss")
+</head>
+<body>
+    <div class="single-pg">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <img class="logo" src="/Content/images/logo.png" />
+            </div>
+            <div class="panel-body">
+                <form action="/sign-in" method="post" class="form-signin">
+                    @Html.AntiForgeryToken()
+                    <div class="username">
+                        <label class="pull-left">Email</label>
+                        @Html.ValidationMessageFor(x => x.Email)
+                        @Html.TextBoxFor(x => x.Email, new { @class = "form-control", placeholder = "Email", required = "required", autofocus = "autofocus" })
+                    </div>
+                    <div class="password">
+                        <label class="pull-left">Password</label>
+                        <a class="pull-right" href="/forgot-password">forgot password?</a>
+                        @Html.ValidationMessageFor(x => x.Password)
+                        @Html.PasswordFor(x => x.Password, new { @class = "form-control", placeholder = "Password", required = "required" })
+                    </div>
+
+                    <div class="error text-danger">
+                        @Html.ValidationSummary()
+                    </div>
+
+                    <div class="buttons">
+                        <button class="btn btn-success pull-left" type="submit" tabindex="3">Sign in</button>
+                        <span class="pull-right other-links">
+                            <label>
+                                Don't have an account?&nbsp;<a href="/sign-up" class="pull-right" tabindex="4">Sign Up</a>
+                            </label>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

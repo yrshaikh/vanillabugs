@@ -1,0 +1,32 @@
+﻿@using System.Web.Helpers
+@model Service.Core.AppModel
+
+<h2>I am the splash page.</h2>
+
+@if (Request.IsAuthenticated)
+{
+    <span>You are authenticated.</span>
+    <a href="/account/logoff">Sign Out</a>
+}
+else
+{
+    <a href="/sign-in">Sign In</a>
+    <a href="/sign-up">Sign Up</a>
+}
+
+@*@Html.Partial("_Header")
+<div id="appLoader" style="text-align: center;padding: 150px;">
+    <img src="/Content/Images/loader.gif" />
+</div>
+<div id="appView" ui-view class="ui"></div>
+
+
+@section scripts {
+    <script>
+        window.app = JSON.parse('@Html.Raw(Json.Encode(Model))')
+    </script>
+}
+
+@section postScript{
+    @Scripts.Render("~/bundles/app")
+}*@

@@ -1,0 +1,17 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("_Header")
+@Html.Partial("_SubHeader")
+
+<script type="text/javascript">
+</script>
+
+<div ng-app="project-management" ng-cloak="" ui-view class="container wrapper-container">
+
+</div>
+
+@section postScript{
+    @Scripts.Render("~/bundles/app")
+}

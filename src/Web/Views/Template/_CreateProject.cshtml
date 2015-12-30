@@ -1,0 +1,25 @@
+﻿@{
+    Layout = null;
+}
+<div ng-controller="NewProjectController" class="popup ng-cloak" ng-class="{'open':newProjectPopupOpen}">
+    <div class="header">
+        <h4 class="pull-left bread">CREATE NEW PROJECT</h4>
+        <img src="/Content/Images/close.png" class="pull-right close" ng-click="closeNewProjectPopup()" />
+    </div>
+    <div class="content">
+        <form ng-init="init()">
+            <div class="form-group">
+                <label>PROJECT NAME</label>
+                <input type="text" class="form-control txt-sm" ng-model="project.name" autofocus required="" placeholder="Your project name. Keep it small & descriptive.">
+            </div>
+            <div ng-show="project.saveFailure" class="text-danger mb10">Oops! This is embarassing, something went wrong. Please try again.</div>
+            <div ng-show="project.saveFailureDuplicate" class="text-danger mb10">A project with same name already exits. Please try again with a different name.</div>
+            <button ng-hide="project.saving || project.saveSuccess" type="submit" class="btn btn-success"
+                    ng-click="saveProject();" ng-disabled="!project.name">
+                Create project
+            </button>
+            <button ng-show="project.saving && !project.saveSuccess" class="btn btn-success" disabled="disabled">Creating...</button>
+            <button ng-show="project.saveSuccess" class="btn btn-success" disabled="disabled">Project created. Redirecting to project dashboard...</button>
+        </form>
+    </div>
+</div>

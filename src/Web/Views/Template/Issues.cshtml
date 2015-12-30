@@ -1,0 +1,85 @@
+﻿@{
+    Layout = null;
+}
+@Html.Partial("_ProjectHeader")
+<div ng-show="project.loading" class="container-fluid main main-app">
+    loading..
+</div>
+<div ng-hide="project.loading" class="container-fluid main ng-cloak main-app" ng-init="init()">
+    <div class="">
+        <div class="wrapper clearfix">
+            <div class="inner-content">
+                <div class="clearfix actions">
+                    <span class="header pull-left">Issues</span>
+                    <button class="btn btn-success pull-right btn-sm" ng-click="newIssue();"><i class="fa fa-plus"></i>&nbsp;New Issue</button>
+                </div>
+                <div class="table-responsive">
+                    <div class="t-header">
+                        <div class="pull-left btn-group btn-group-sm" role="group" aria-label="Small button group">
+                            <button type="button" class="btn btn-default">All</button>
+                            <button type="button" class="btn btn-default">Open</button>
+                            <button type="button" class="btn btn-default">Assinged to me</button>
+                            <button type="button" class="btn btn-default">Watched by me</button>
+                        </div>
+                        <div class="pull-right dropdown">
+                            <a href="#" class="dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Priority: <span class="selected">Normal</span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">All issues</a></li>
+                                <li><a href="#">Open issues</a></li>
+                                <li><a href="#">All issues assigned to me</a></li>
+                                <li><a href="#">Closed issues</a></li>
+                            </ul>
+                        </div>
+                        <div class="pull-right dropdown">
+                            <a href="#" class="dropdown-toggle btn btn-sm btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sort by: <span class="selected">Priority</span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">All issues</a></li>
+                                <li><a href="#">Open issues</a></li>
+                                <li><a href="#">All issues assigned to me</a></li>
+                                <li><a href="#">Closed issues</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>State</th>
+                            <th>Priority</th>
+                            <th class="title">Title</th>
+                            <th>Assignee</th>
+                            <th>Due Date</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td><i class="fa fa-exclamation" title="High"></i></td>
+                            <td class="title"><a href="#">#8: Email sent have bcc to yrshaikh, should be removed ASAP.</a></td>
+                            <td><span class="label label-danger">closed</span></td>
+                            <td>Yasser Shaikh</td>
+                            <td>1st Jan 2015</td>
+                            <td><i class="fa fa-bars"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-arrow-down" title="Low"></i></td>
+                            <td class="title"><a href="#">#16: The login links does not work, redirects to the nortan conenct safe page.</a></td>
+                            <td><span class="label label-success">Open</span></td>
+                            <td>Yasser Shaikh</td>
+                            <td>Today</td>
+                            <td><i class="fa fa-bars"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-dot-circle-o" title="Noraml"></i></td>
+                            <td class="title"><a href="#">#32: Cannot save new issues when logged in via fake account.</a></td>
+                            <td><span class="label label-success">Open</span></td>
+                            <td>Unassigned</td>
+                            <td>31st Dec 2015</td>
+                            <td><i class="fa fa-bars"></i></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@Html.Partial("_CreateIssue")

@@ -1,0 +1,11 @@
+﻿@using Web.Core.Utils.Helpers
+
+@{
+    ViewBag.Title = "_Footer";
+}
+
+<div id="footer">
+    <div class="inner">
+        <p class="pull-right">&copy; @DateTime.Now.Year - @BrandManager.GetBrandName()</p>
+    </div>
+</div>

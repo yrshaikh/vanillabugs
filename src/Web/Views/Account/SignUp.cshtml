@@ -1,0 +1,70 @@
+﻿@using Web.Core.Utils.Helpers
+@using Web.Models
+@model RegisterViewModel
+@{
+    Layout = null;
+    ViewBag.Title = "Register";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - @BrandManager.GetBrandName()</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    @Styles.Render("~/Content/logincss")
+
+</head>
+<body>
+    <div class="container">
+        <div class=" single-pg">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <img class="logo" src="/Content/images/logo.png" />
+                </div>
+                <div class="panel-body">
+                    <form action="/sign-up" method="post" class="form-register">
+                        @Html.AntiForgeryToken()
+                        <div class="input">
+                            <label>First Name</label>
+                            @Html.ValidationMessageFor(x => x.FirstName)
+                            @Html.TextBoxFor(x => x.FirstName, new { @class = "form-control", placeholder = "John", required = "required", autofocus = "autofocus" })
+                        </div>
+                        <div class="input">
+                            <label>Last Name</label>
+                            @Html.ValidationMessageFor(x => x.LastName)
+                            @Html.TextBoxFor(x => x.LastName, new { @class = "form-control", placeholder = "Doe", required = "required" })
+                        </div>
+                        <div class="input">
+                            <label>Email</label>
+                            @Html.ValidationMessageFor(x => x.Email)
+                            @Html.TextBoxFor(x => x.Email, new {@class = "form-control", placeholder = "someone@yourdomain.com", required = "required"})
+                        </div>
+                        <div class="input">
+                            <label>Password</label>
+                            @Html.ValidationMessageFor(x => x.Password)
+                            @Html.PasswordFor(x => x.Password, new {@class = "form-control", placeholder = "********", required = "required"})
+                        </div>
+                        <div class="error text-danger">
+                            @*"Oops! This is embarassing, something went wrong. Please try again!"*@
+                            @Html.ValidationSummary("Correct the following errors before continuing!", "header")
+                        </div>
+                        <div class="buttons">
+                            <button class="btn btn-success pull-left" type="submit" tabindex="5">Sign up</button>
+                            <span class="pull-right other-links">
+                                <label>
+                                    I already have an account. &nbsp;<a href="/sign-in" class="pull-right" tabindex="4">Sign in</a>
+                                </label>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

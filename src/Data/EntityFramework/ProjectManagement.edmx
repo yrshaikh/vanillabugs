@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ProjectManagementModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="AspNetUsers">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar(max)" />
+          <Property Name="LastName" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar" MaxLength="256" />
+          <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+          <Property Name="PasswordHash" Type="nvarchar(max)" />
+          <Property Name="SecurityStamp" Type="nvarchar(max)" />
+          <Property Name="PhoneNumber" Type="nvarchar(max)" />
+          <Property Name="PhoneNumberConfirmed" Type="bit" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="bit" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="datetime" />
+          <Property Name="LockoutEnabled" Type="bit" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="int" Nullable="false" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IssuePriorityMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="tinyint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="Rank" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Issues">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProjectId" Type="int" Nullable="false" />
+          <Property Name="Title" Type="varchar" MaxLength="255" Nullable="false" />
+          <Property Name="Description" Type="varchar" MaxLength="4000" />
+          <Property Name="Type" Type="tinyint" />
+          <Property Name="Priority" Type="tinyint" />
+          <Property Name="Status" Type="tinyint" />
+          <Property Name="ReportedBy" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="ReportedDate" Type="datetime" Nullable="false" />
+          <Property Name="AssignedTo" Type="nvarchar" MaxLength="128" />
+          <Property Name="ModifedBy" Type="nvarchar" MaxLength="128" />
+          <Property Name="ModifiedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="IssueStatusMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="tinyint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Rank" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IssueTypeMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="tinyint" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Rank" Type="tinyint" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Projects">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+          <Property Name="UpdatedDateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="UserProjectMappings">
+          <Key>
+            <PropertyRef Name="MapId" />
+          </Key>
+          <Property Name="MapId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserId" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="ProjectId" Type="int" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Issues_IssuePriorityMaster">
+          <End Role="IssuePriorityMaster" Type="Self.IssuePriorityMaster" Multiplicity="0..1" />
+          <End Role="Issues" Type="Self.Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IssuePriorityMaster">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Issues">
+              <PropertyRef Name="Priority" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Issues_IssueStatusMaster">
+          <End Role="IssueStatusMaster" Type="Self.IssueStatusMaster" Multiplicity="0..1" />
+          <End Role="Issues" Type="Self.Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IssueStatusMaster">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Issues">
+              <PropertyRef Name="Status" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Issues_IssueTypeMaster">
+          <End Role="IssueTypeMaster" Type="Self.IssueTypeMaster" Multiplicity="0..1" />
+          <End Role="Issues" Type="Self.Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IssueTypeMaster">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Issues">
+              <PropertyRef Name="Type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Issues_Projects">
+          <End Role="Projects" Type="Self.Projects" Multiplicity="1" />
+          <End Role="Issues" Type="Self.Issues" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Issues">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProjectMappings_AspNetUsers">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+          <End Role="UserProjectMappings" Type="Self.UserProjectMappings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserProjectMappings">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_UserProjectMappings_Projects">
+          <End Role="Projects" Type="Self.Projects" Multiplicity="1" />
+          <End Role="UserProjectMappings" Type="Self.UserProjectMappings" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserProjectMappings">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ProjectManagementModelStoreContainer">
+          <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IssuePriorityMaster" EntityType="Self.IssuePriorityMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Issues" EntityType="Self.Issues" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IssueStatusMaster" EntityType="Self.IssueStatusMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IssueTypeMaster" EntityType="Self.IssueTypeMaster" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Projects" EntityType="Self.Projects" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserProjectMappings" EntityType="Self.UserProjectMappings" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Issues_IssuePriorityMaster" Association="Self.FK_Issues_IssuePriorityMaster">
+            <End Role="IssuePriorityMaster" EntitySet="IssuePriorityMaster" />
+            <End Role="Issues" EntitySet="Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Issues_IssueStatusMaster" Association="Self.FK_Issues_IssueStatusMaster">
+            <End Role="IssueStatusMaster" EntitySet="IssueStatusMaster" />
+            <End Role="Issues" EntitySet="Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Issues_IssueTypeMaster" Association="Self.FK_Issues_IssueTypeMaster">
+            <End Role="IssueTypeMaster" EntitySet="IssueTypeMaster" />
+            <End Role="Issues" EntitySet="Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Issues_Projects" Association="Self.FK_Issues_Projects">
+            <End Role="Projects" EntitySet="Projects" />
+            <End Role="Issues" EntitySet="Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProjectMappings_AspNetUsers" Association="Self.FK_UserProjectMappings_AspNetUsers">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="UserProjectMappings" EntitySet="UserProjectMappings" />
+          </AssociationSet>
+          <AssociationSet Name="FK_UserProjectMappings_Projects" Association="Self.FK_UserProjectMappings_Projects">
+            <End Role="Projects" EntitySet="Projects" />
+            <End Role="UserProjectMappings" EntitySet="UserProjectMappings" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ProjectManagementModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Project">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="UpdatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="UserProjectMappings" Relationship="Self.FK_UserProjectMappings_Projects" FromRole="Projects" ToRole="UserProjectMappings" />
+          <NavigationProperty Name="Issues" Relationship="ProjectManagementModel.FK_Issues_Projects" FromRole="Project" ToRole="Issue" />
+        </EntityType>
+        <EntityType Name="UserProjectMapping">
+          <Key>
+            <PropertyRef Name="MapId" />
+          </Key>
+          <Property Name="MapId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ProjectId" Type="Int32" Nullable="false" />
+          <Property Name="CreatedDateTime" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="Project" Relationship="Self.FK_UserProjectMappings_Projects" FromRole="UserProjectMappings" ToRole="Projects" />
+          <NavigationProperty Name="AspNetUser" Relationship="ProjectManagementModel.FK_UserProjectMappings_AspNetUsers" FromRole="UserProjectMapping" ToRole="AspNetUser" />
+        </EntityType>
+        <Association Name="FK_UserProjectMappings_Projects">
+          <End Role="Projects" Type="Self.Project" Multiplicity="1" />
+          <End Role="UserProjectMappings" Type="Self.UserProjectMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Projects">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserProjectMappings">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="ProjectManagementEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Projects" EntityType="Self.Project" />
+          <EntitySet Name="UserProjectMappings" EntityType="Self.UserProjectMapping" />
+          <AssociationSet Name="FK_UserProjectMappings_Projects" Association="Self.FK_UserProjectMappings_Projects">
+            <End Role="Projects" EntitySet="Projects" />
+            <End Role="UserProjectMappings" EntitySet="UserProjectMappings" />
+          </AssociationSet>
+          <EntitySet Name="AspNetUsers" EntityType="ProjectManagementModel.AspNetUser" />
+          <AssociationSet Name="FK_UserProjectMappings_AspNetUsers" Association="ProjectManagementModel.FK_UserProjectMappings_AspNetUsers">
+            <End Role="AspNetUser" EntitySet="AspNetUsers" />
+            <End Role="UserProjectMapping" EntitySet="UserProjectMappings" />
+          </AssociationSet>
+          <EntitySet Name="IssuePriorityMasters" EntityType="ProjectManagementModel.IssuePriorityMaster" />
+          <EntitySet Name="IssueStatusMasters" EntityType="ProjectManagementModel.IssueStatusMaster" />
+          <EntitySet Name="IssueTypeMasters" EntityType="ProjectManagementModel.IssueTypeMaster" />
+          <EntitySet Name="Issues" EntityType="ProjectManagementModel.Issue" />
+          <AssociationSet Name="FK_Issues_IssuePriorityMaster" Association="ProjectManagementModel.FK_Issues_IssuePriorityMaster">
+            <End Role="IssuePriorityMaster" EntitySet="IssuePriorityMasters" />
+            <End Role="Issue" EntitySet="Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Issues_IssueStatusMaster" Association="ProjectManagementModel.FK_Issues_IssueStatusMaster">
+            <End Role="IssueStatusMaster" EntitySet="IssueStatusMasters" />
+            <End Role="Issue" EntitySet="Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Issues_IssueTypeMaster" Association="ProjectManagementModel.FK_Issues_IssueTypeMaster">
+            <End Role="IssueTypeMaster" EntitySet="IssueTypeMasters" />
+            <End Role="Issue" EntitySet="Issues" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Issues_Projects" Association="ProjectManagementModel.FK_Issues_Projects">
+            <End Role="Project" EntitySet="Projects" />
+            <End Role="Issue" EntitySet="Issues" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="AspNetUser">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+          <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="PasswordHash" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SecurityStamp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumberConfirmed" Type="Boolean" Nullable="false" />
+          <Property Name="TwoFactorEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="LockoutEndDateUtc" Type="DateTime" Precision="3" />
+          <Property Name="LockoutEnabled" Type="Boolean" Nullable="false" />
+          <Property Name="AccessFailedCount" Type="Int32" Nullable="false" />
+          <Property Name="UserName" Type="String" Nullable="false" MaxLength="256" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="UserProjectMappings" Relationship="ProjectManagementModel.FK_UserProjectMappings_AspNetUsers" FromRole="AspNetUser" ToRole="UserProjectMapping" />
+        </EntityType>
+        <Association Name="FK_UserProjectMappings_AspNetUsers">
+          <End Type="ProjectManagementModel.AspNetUser" Role="AspNetUser" Multiplicity="1" />
+          <End Type="ProjectManagementModel.UserProjectMapping" Role="UserProjectMapping" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUser">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserProjectMapping">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="IssuePriorityMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="Rank" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="Issues" Relationship="ProjectManagementModel.FK_Issues_IssuePriorityMaster" FromRole="IssuePriorityMaster" ToRole="Issue" />
+        </EntityType>
+        <EntityType Name="IssueStatusMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rank" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="Issues" Relationship="ProjectManagementModel.FK_Issues_IssueStatusMaster" FromRole="IssueStatusMaster" ToRole="Issue" />
+        </EntityType>
+        <EntityType Name="IssueTypeMaster">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Byte" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Rank" Type="Byte" Nullable="false" />
+          <NavigationProperty Name="Issues" Relationship="ProjectManagementModel.FK_Issues_IssueTypeMaster" FromRole="IssueTypeMaster" ToRole="Issue" />
+        </EntityType>
+        <EntityType Name="Issue">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProjectId" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Description" Type="String" MaxLength="4000" FixedLength="false" Unicode="false" />
+          <Property Name="Type" Type="Byte" />
+          <Property Name="Priority" Type="Byte" />
+          <Property Name="Status" Type="Byte" />
+          <Property Name="ReportedBy" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ReportedDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AssignedTo" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ModifedBy" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="ModifiedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="IssuePriorityMaster" Relationship="ProjectManagementModel.FK_Issues_IssuePriorityMaster" FromRole="Issue" ToRole="IssuePriorityMaster" />
+          <NavigationProperty Name="IssueStatusMaster" Relationship="ProjectManagementModel.FK_Issues_IssueStatusMaster" FromRole="Issue" ToRole="IssueStatusMaster" />
+          <NavigationProperty Name="IssueTypeMaster" Relationship="ProjectManagementModel.FK_Issues_IssueTypeMaster" FromRole="Issue" ToRole="IssueTypeMaster" />
+          <NavigationProperty Name="Project" Relationship="ProjectManagementModel.FK_Issues_Projects" FromRole="Issue" ToRole="Project" />
+        </EntityType>
+        <Association Name="FK_Issues_IssuePriorityMaster">
+          <End Type="ProjectManagementModel.IssuePriorityMaster" Role="IssuePriorityMaster" Multiplicity="0..1" />
+          <End Type="ProjectManagementModel.Issue" Role="Issue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IssuePriorityMaster">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Issue">
+              <PropertyRef Name="Priority" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Issues_IssueStatusMaster">
+          <End Type="ProjectManagementModel.IssueStatusMaster" Role="IssueStatusMaster" Multiplicity="0..1" />
+          <End Type="ProjectManagementModel.Issue" Role="Issue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IssueStatusMaster">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Issue">
+              <PropertyRef Name="Status" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Issues_IssueTypeMaster">
+          <End Type="ProjectManagementModel.IssueTypeMaster" Role="IssueTypeMaster" Multiplicity="0..1" />
+          <End Type="ProjectManagementModel.Issue" Role="Issue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IssueTypeMaster">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Issue">
+              <PropertyRef Name="Type" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Issues_Projects">
+          <End Type="ProjectManagementModel.Project" Role="Project" Multiplicity="1" />
+          <End Type="ProjectManagementModel.Issue" Role="Issue" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Project">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Issue">
+              <PropertyRef Name="ProjectId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ProjectManagementModelStoreContainer" CdmEntityContainer="ProjectManagementEntities">
+          <EntitySetMapping Name="Projects">
+            <EntityTypeMapping TypeName="ProjectManagementModel.Project">
+              <MappingFragment StoreEntitySet="Projects">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+                <ScalarProperty Name="UpdatedDateTime" ColumnName="UpdatedDateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserProjectMappings">
+            <EntityTypeMapping TypeName="ProjectManagementModel.UserProjectMapping">
+              <MappingFragment StoreEntitySet="UserProjectMappings">
+                <ScalarProperty Name="MapId" ColumnName="MapId" />
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+                <ScalarProperty Name="CreatedDateTime" ColumnName="CreatedDateTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AspNetUsers">
+            <EntityTypeMapping TypeName="ProjectManagementModel.AspNetUser">
+              <MappingFragment StoreEntitySet="AspNetUsers">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+                <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+                <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+                <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+                <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+                <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+                <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IssuePriorityMasters">
+            <EntityTypeMapping TypeName="ProjectManagementModel.IssuePriorityMaster">
+              <MappingFragment StoreEntitySet="IssuePriorityMaster">
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IssueStatusMasters">
+            <EntityTypeMapping TypeName="ProjectManagementModel.IssueStatusMaster">
+              <MappingFragment StoreEntitySet="IssueStatusMaster">
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IssueTypeMasters">
+            <EntityTypeMapping TypeName="ProjectManagementModel.IssueTypeMaster">
+              <MappingFragment StoreEntitySet="IssueTypeMaster">
+                <ScalarProperty Name="Rank" ColumnName="Rank" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Issues">
+            <EntityTypeMapping TypeName="ProjectManagementModel.Issue">
+              <MappingFragment StoreEntitySet="Issues">
+                <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+                <ScalarProperty Name="ModifedBy" ColumnName="ModifedBy" />
+                <ScalarProperty Name="AssignedTo" ColumnName="AssignedTo" />
+                <ScalarProperty Name="ReportedDate" ColumnName="ReportedDate" />
+                <ScalarProperty Name="ReportedBy" ColumnName="ReportedBy" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+                <ScalarProperty Name="Type" ColumnName="Type" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="ProjectId" ColumnName="ProjectId" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
