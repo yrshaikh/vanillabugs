@@ -155,6 +155,9 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Function Name="get_users_in_project" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="project_id" Type="int" Mode="In" />
+        </Function>
         <EntityContainer Name="ProjectManagementModelStoreContainer">
           <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IssuePriorityMaster" EntityType="Self.IssuePriorityMaster" Schema="dbo" store:Type="Tables" />
@@ -258,6 +261,9 @@
             <End Role="Project" EntitySet="Projects" />
             <End Role="Issue" EntitySet="Issues" />
           </AssociationSet>
+          <FunctionImport Name="get_users_in_project" ReturnType="Collection(ProjectManagementModel.GetUsersInProjectResult)">
+            <Parameter Name="project_id" Mode="In" Type="Int32" />
+          </FunctionImport>
           </EntityContainer>
         <EntityType Name="AspNetUser">
           <Key>
@@ -387,6 +393,12 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <ComplexType Name="GetUsersInProjectResult">
+          <Property Type="String" Name="Id" Nullable="false" MaxLength="128" />
+          <Property Type="String" Name="FirstName" Nullable="true" />
+          <Property Type="String" Name="LastName" Nullable="true" />
+          <Property Type="String" Name="Email" Nullable="true" MaxLength="256" />
+        </ComplexType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -478,6 +490,16 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="get_users_in_project" FunctionName="ProjectManagementModel.Store.get_users_in_project">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="ProjectManagementModel.GetUsersInProjectResult">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

@@ -22,12 +22,13 @@ namespace Web
             ));
 
             bundles.Add(new ScriptBundle("~/bundles/rest").Include(
-                "~/scripts/underscore/underscore.js",
-                "~/scripts/select2/select.js"
+                "~/scripts/plugins/underscore/underscore.js",
+                "~/scripts/plugins/select2/select.js"
             ));
             
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
                 "~/scripts/app/app.js",
+                "~/scripts/app/helpers/ui-helpers.js",
 				"~/scripts/app/services/project-service.js",
 				"~/scripts/app/services/issue-service.js",
 				"~/scripts/app/controllers/new-project-controller.js",

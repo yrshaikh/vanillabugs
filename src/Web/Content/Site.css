@@ -127,4 +127,4 @@ textarea {resize: none;}
 .new-issue .form-group .minor {width: 280px;margin-top: 15px;}
 .new-issue .form-group .minor:first-child {margin-top: 0px;}
 .new-issue .form-group .minor:last-child {margin-right: 0px;}
-.new-issue .form-group textarea { height: 140px;}
+.new-issue .form-group textarea { height: 150px;}

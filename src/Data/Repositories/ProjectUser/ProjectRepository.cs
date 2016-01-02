@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Data.Core.EntityFramework;
 
 namespace Data.Core
@@ -10,7 +11,7 @@ namespace Data.Core
         {
             using (var dbContext = new ProjectManagementEntities())
             {
-                foreach (var user in users)
+                foreach (Guid user in users)
                 {
                     UserProjectMapping mapping = new UserProjectMapping
                     {
@@ -21,6 +22,14 @@ namespace Data.Core
                     dbContext.UserProjectMappings.Add(mapping);    
                 }
                 dbContext.SaveChanges();
+            }
+        }
+
+        public List<GetUsersInProjectResult> GetProjectUsersByProjectId(int projectId)
+        {
+            using (var dbContext = new ProjectManagementEntities())
+            {
+                return dbContext.get_users_in_project(projectId).ToList();
             }
         }
     }

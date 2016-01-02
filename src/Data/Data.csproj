@@ -51,6 +51,9 @@
     <Compile Include="EntityFramework\AspNetUser.cs">
       <DependentUpon>ProjectManagement.tt</DependentUpon>
     </Compile>
+    <Compile Include="EntityFramework\GetUsersInProjectResult.cs">
+      <DependentUpon>ProjectManagement.tt</DependentUpon>
+    </Compile>
     <Compile Include="EntityFramework\Issue.cs">
       <DependentUpon>ProjectManagement.tt</DependentUpon>
     </Compile>

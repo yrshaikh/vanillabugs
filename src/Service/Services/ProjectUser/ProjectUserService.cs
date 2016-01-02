@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Data.Core;
 
 namespace Service.Core
@@ -20,5 +21,15 @@ namespace Service.Core
             _projectUserRepository.AddUsersToProject(projectId, users);
         }
         #endregion
+
+        #region GET
+
+        public List<object> GetProjectUsersByProjectId(int projectId)
+        {
+            return _projectUserRepository.GetProjectUsersByProjectId(projectId).ToList<object>();
+        }
+        #endregion
+
+
     }
 }

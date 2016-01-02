@@ -7,50 +7,51 @@
         <img src="/Content/Images/close.png" class="pull-right close" ng-click="closeNewIssuePopup()" />
     </div>
     <div class="content">
-        <form ng-init="init()">
+        <form name="issueForm" ng-init="init()">
             <div class="col-md-8">
-                <div class="form-group">
+                @*<div class="form-group">
                     <label>PROJECT <i class="fa fa-asterisk red" title="Required field"></i></label>
-                    <select class="form-control" ng-model="issue.projectId" ng-options="item.Id as item.Name for item in projectList.data" required=""></select>
-                </div>
+                    <select id="projects" style="width:100%" ng-disabled="issue.saving" ng-model="issue.projectId" ng-options="item.Id as item.Name for item in projectList.data" required="" tabindex="1"></select>
+                </div>*@
                 <div class="form-group">
                     <label>Subject <i class="fa fa-asterisk red" title="Required field"></i></label>
-                    <input id="issuetitle" type="text" class="form-control" ng-model="issue.name" autofocus required="" placeholder="Title" tabindex="1">
+                    <input id="issuetitle" type="text" class="form-control" ng-disabled="issue.saving" ng-model="issue.name" autofocus required="" placeholder="Title" tabindex="2">
                 </div>
                 <div class="form-group">
                     <label>Comment</label>
-                    <textarea class="form-control" ng-model="issue.description" placeholder="Leave a comment" tabindex="2"></textarea>
+                    <textarea class="form-control" ng-disabled="issue.saving" ng-model="issue.description" placeholder="Leave a comment" tabindex="3"></textarea>
                 </div>
             </div>
             <div class="form-group col-md-4">
                 <div class="minor">
-                    <label>TYPE</label>
-                    <select class="form-control" ng-model="issue.type" ng-options="item.Id as item.Name for item in issueTypes.data" tabindex="3"></select>
+                    <label>PROJECT <i class="fa fa-asterisk red" title="Required field"></i></label>
+                    <select id="projects" style="width:100%" ng-disabled="issue.saving" ng-model="issue.projectId" ng-options="item.Id as item.Name for item in projectList.data" required="" tabindex="1"></select>
                 </div>
                 <div class="minor">
-                    <label>ASSIGNEE</label>
-                    <select class="form-control" tabindex="4">
-                        <option>Yasser Shaikh</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </select>
+                    <label>TYPE</label>
+                    <select id="types" style="width:100%" ng-disabled="issue.saving" ng-model="issue.type" ng-options="item.Id as item.Name for item in issueTypes.data" tabindex="4"></select>
                 </div>
                 <div class="minor">
                     <label>PRIORITY</label>
-                    <select class="form-control" ng-model="issue.priority" ng-options="item.Id as item.Name for item in issuePriorities.data" tabindex="5"></select>
+                    <select id="priorities" style="width:100%" ng-disabled="issue.saving" ng-model="issue.priority" ng-options="item.Id as item.Name for item in issuePriorities.data" tabindex="5"></select>
+                </div>
+                <div class="minor">
+                    <label>ASSIGNEE</label>
+                    <select id="assignees" style="width:100%" ng-disabled="issue.saving" ng-model="issue.assignee" ng-options="item.Id as item.FirstName for item in projectUsers.data" tabindex="6"></select>
                 </div>
             </div>
             <div class="form-group col-md-12">
-                <div ng-show="project.saveFailure" class="text-danger mb10">Oops! This is embarassing, something went wrong. Please try again.</div>
-                <div ng-show="project.saveFailureDuplicate" class="text-danger mb10">A project with same name already exits. Please try again with a different name.</div>
-                <button ng-hide="project.saving" type="submit" class="btn btn-success"
-                        ng-click="saveProject();" ng-disabled="!project.name" tabindex="6">
+                <div ng-show="issue.saveFailure" class="text-danger mb10">Oops! This is embarassing, something went wrong. Please try again.</div>
+                <div ng-show="issue.saveFailureDuplicate" class="text-danger mb10">A project with same name already exits. Please try again with a different name.</div>
+                <button ng-hide="issue.saving" type="submit" class="btn btn-success"
+                        ng-click="saveIssue();" ng-disabled="issueForm.$invalid" tabindex="6">
                     Create issue
                 </button>
-                <button ng-show="project.saving" class="btn btn-success" disabled="disabled">SAVING...</button>
+                <button ng-show="issue.saving" class="btn btn-success" disabled="disabled">Submitting issue</button>
             </div>
         </form>
+        <pre>
+{{issue}}
+</pre>
     </div>
 </div>

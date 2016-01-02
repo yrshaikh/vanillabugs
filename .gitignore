@@ -1,0 +1,10 @@
+/src/Data/bin
+/src/Data/obj
+/src/Service/obj
+/src/Service/bin
+/src/Web/obj
+/src/Web/bin
+/src/root/obj
+/src/root/bin
+
+*.suo
