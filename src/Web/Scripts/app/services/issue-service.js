@@ -1,11 +1,10 @@
 angular.module("project-management").factory('IssueService', ['$http', function ($http) {
     return {
-        createNewIssue: function(name) {
-            var project = {name: name};
+        createNewIssue: function(data) {
             return $http({
                 url: '/issue/create',
                 method: 'POST',
-                data: project
+                data: data
             });
         },
         getAllIssues: function() {

@@ -14,12 +14,17 @@
                     <select id="projects" style="width:100%" ng-disabled="issue.saving" ng-model="issue.projectId" ng-options="item.Id as item.Name for item in projectList.data" required="" tabindex="1"></select>
                 </div>*@
                 <div class="form-group">
-                    <label>Subject <i class="fa fa-asterisk red" title="Required field"></i></label>
-                    <input id="issuetitle" type="text" class="form-control" ng-disabled="issue.saving" ng-model="issue.name" autofocus required="" placeholder="Title" tabindex="2">
+                    <label>Summary <i class="fa fa-asterisk red" title="Required field"></i></label>
+                    <input id="issuetitle" type="text" class="form-control" ng-disabled="issue.saving" ng-model="issue.title" autofocus required="" placeholder="Enter one-line summary of the issue." tabindex="2">
                 </div>
                 <div class="form-group">
-                    <label>Comment</label>
-                    <textarea class="form-control" ng-disabled="issue.saving" ng-model="issue.description" placeholder="Leave a comment" tabindex="3"></textarea>
+                    <label>Description</label>
+                    <textarea class="form-control" ng-disabled="issue.saving" ng-model="issue.description"
+                              placeholder="What steps will reproduce this issue?
+
+1. What is the expected output? What do you see instead?
+2. What version of the product are you using? And on what browser/operating system?
+3. Please provide any additional information below." tabindex="3"></textarea>
                 </div>
             </div>
             <div class="form-group col-md-4">
@@ -50,8 +55,6 @@
                 <button ng-show="issue.saving" class="btn btn-success" disabled="disabled">Submitting issue</button>
             </div>
         </form>
-        <pre>
-{{issue}}
-</pre>
+        @*<pre>{{issue}}</pre>*@
     </div>
 </div>

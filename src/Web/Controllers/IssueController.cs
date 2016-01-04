@@ -1,13 +1,14 @@
 ﻿using System.Web.Mvc;
 using Service.Core;
+using Web.Utils;
 
 namespace Web.Controllers
 {
     [Authorize]
-    public class IssuesController : Controller
+    public class IssueController : Controller
     {
         private readonly IIssueService _issueService;
-        public IssuesController(IIssueService issueService)
+        public IssueController(IIssueService issueService)
         {
             _issueService = issueService;
         }
@@ -20,6 +21,8 @@ namespace Web.Controllers
             bool isModelValid = false;
             if (ModelState.IsValid)
             {
+                model.ReportedBy = WebHelper.GetLoggedInUserId().ToString();
+
                 _issueService.CreateNewIssue(model, out issueId);
                 createdSuccessfully = true;
                 isModelValid = true;

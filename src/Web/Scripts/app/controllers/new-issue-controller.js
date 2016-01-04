@@ -44,7 +44,7 @@ angular.module('project-management').controller('NewIssueController',
          var projectId = $stateParams.id;
          $scope.issue = {
              projectId: parseInt(projectId),
-             name: '',
+             title: '',
              description: null,
              type: 1,
              priority: 2,
@@ -134,7 +134,7 @@ angular.module('project-management').controller('NewIssueController',
 
      $scope.saveIssue = function () {
 
-         var issue = _.extend($scope.issue, {});
+         var issue = angular.copy($scope.issue);
          delete issue.saving;
          delete issue.saveFailure;
          delete issue.saveSuccess;
@@ -145,6 +145,7 @@ angular.module('project-management').controller('NewIssueController',
          $scope.issue.saving = true;
          $scope.issue.saveFailure = false;
 
+         console.log(issue);
          issueService.createNewIssue(issue)
              .success(function (response) {
                  $scope.issue.saving = false;

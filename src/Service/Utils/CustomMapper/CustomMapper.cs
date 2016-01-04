@@ -19,7 +19,7 @@ namespace Service.Core
             Mapper.CreateMap<AspNetUser, AspNetUserModel>();
             
             /*** Issues ***/
-            Mapper.CreateMap<Issue, CreateIssueModel>();
+            Mapper.CreateMap<CreateIssueModel, Issue>().FixDestination(new string[] { "IssuePriorityMaster", "IssueStatusMaster", "IssueTypeMaster", "Project" });
             Mapper.CreateMap<IssuePriorityMaster, IssueMasterModel>();
             Mapper.CreateMap<IssueStatusMaster, IssueMasterModel>();
             Mapper.CreateMap<IssueTypeMaster, IssueMasterModel>();
